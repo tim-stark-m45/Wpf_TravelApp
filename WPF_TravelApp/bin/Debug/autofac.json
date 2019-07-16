@@ -1,0 +1,33 @@
+{
+  "defaultAssembly": "WPF_TravelApp",
+  "components": [
+    { "type": "WPF_TravelApp.ViewModels.MainViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.HelloViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.SignUpViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.TripAddViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.TripDbAddViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.HomePageViewModel" },
+    {
+      "type": "WPF_TravelApp.Models.AppDbContext",
+      "instanceScope": "single-instance"
+    },
+    {
+      "type": "WPF_TravelApp.Services.MessageService",
+      "services": [
+        {
+          "type": "WPF_TravelApp.Services.IMessageService"
+        }
+      ]
+    },
+    {
+      "type": "WPF_TravelApp.Services.NavigationService",
+      "services": [
+        {
+          "type": "WPF_TravelApp.Services.INavigationService"
+        }
+      ],
+      "instanceScope": "single-instance"
+    }
+  ]
+}
+
