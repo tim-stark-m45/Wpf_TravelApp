@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="WPF_TravelApp.Views.HelloView"
+﻿<UserControl x:Class="WPF_TravelApp.Views.LoginView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,32 +7,19 @@
              xmlns:vm="clr-namespace:WPF_TravelApp.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="400"
-             d:DataContext="{d:DesignInstance vm:HelloViewModel}">
-    <!--<UserControl.Resources>
-        <DataTemplate x:Key="ListBoxTemplate">
-            <DockPanel>
-                <Button DockPanel.Dock="Right" Content="👁" 
-                        Command="{Binding DataContext.UserLoginCommand, ElementName=Window}"
-                        CommandParameter="{Binding}"/>
-                <Label Content="{Binding UserName}"/>
-            </DockPanel>
-        </DataTemplate>
-    </UserControl.Resources>-->
+             d:DataContext="{d:DesignInstance vm:LoginViewModel}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
-        <!--<ListBox HorizontalContentAlignment="Stretch" FontSize="20"  ItemsSource="{Binding Users}" ItemTemplate="{StaticResource ListBoxTemplate}"/>-->
         <StackPanel Grid.Row="0">
             <Label FontSize="20" Content="Login:"/>
             <TextBox 
-                Name="LoginTextBox" 
                 FontSize="20"
                 Text="{Binding User.UserName}"/>
             <Label FontSize="20" Content="Password:"/>
             <TextBox 
-                Name="PasswordTextBox"
                 FontSize="20" 
                 Text="{Binding User.Password}"/>
         </StackPanel>

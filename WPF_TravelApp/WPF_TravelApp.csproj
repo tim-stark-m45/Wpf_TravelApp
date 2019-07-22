@@ -168,17 +168,17 @@
     <Compile Include="Services\MessageService.cs" />
     <Compile Include="Services\NavigationService.cs" />
     <Compile Include="ViewModelLocator.cs" />
-    <Compile Include="ViewModels\HelloViewModel.cs" />
-    <Compile Include="ViewModels\HomePageViewModel.cs" />
+    <Compile Include="ViewModels\AppViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\SignUpViewModel.cs" />
-    <Compile Include="ViewModels\TripAddViewModel.cs" />
-    <Compile Include="ViewModels\TripDbAddViewModel.cs" />
-    <Compile Include="Views\HelloView.xaml.cs">
-      <DependentUpon>HelloView.xaml</DependentUpon>
+    <Compile Include="ViewModels\TestWindowViewModel.cs" />
+    <Compile Include="ViewModels\TripObserveUCViewModel.cs" />
+    <Compile Include="Views\AppView.xaml.cs">
+      <DependentUpon>AppView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomePageView.xaml.cs">
-      <DependentUpon>HomePageView.xaml</DependentUpon>
+    <Compile Include="Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
@@ -186,11 +186,11 @@
     <Compile Include="Views\SignUpView.xaml.cs">
       <DependentUpon>SignUpView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TripAddView.xaml.cs">
-      <DependentUpon>TripAddView.xaml</DependentUpon>
+    <Compile Include="Views\TestWindowView.xaml.cs">
+      <DependentUpon>TestWindowView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TripDbAddView.xaml.cs">
-      <DependentUpon>TripDbAddView.xaml</DependentUpon>
+    <Compile Include="Views\TripObserveUCView.xaml.cs">
+      <DependentUpon>TripObserveUCView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -234,11 +234,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\HelloView.xaml">
+    <Page Include="Views\AppView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\HomePageView.xaml">
+    <Page Include="Views\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -250,11 +250,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\TripAddView.xaml">
+    <Page Include="Views\TestWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\TripDbAddView.xaml">
+    <Page Include="Views\TripObserveUCView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

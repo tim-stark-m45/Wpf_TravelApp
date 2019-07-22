@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WPF_TravelApp.Views
 {
     /// <summary>
-    /// Interaction logic for HomePageView.xaml
+    /// Interaction logic for LoginView.xaml
     /// </summary>
-    public partial class HomePageView : UserControl
+    public partial class LoginView : UserControl
     {
-        public HomePageView()
+        public LoginView()
         {
             InitializeComponent();
         }

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WPF_TravelApp.Views
 {
     /// <summary>
-    /// Interaction logic for TripDbAddView.xaml
+    /// Interaction logic for TripObserveUCView.xaml
     /// </summary>
-    public partial class TripDbAddView : UserControl
+    public partial class TripObserveUCView : UserControl
     {
-        public TripDbAddView()
+        public TripObserveUCView()
         {
             InitializeComponent();
         }

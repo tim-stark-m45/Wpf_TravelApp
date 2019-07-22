@@ -11,12 +11,12 @@ namespace WPF_TravelApp
 {
     class ViewModelLocator
     {
-        private MainViewModel mainViewModel;
-        private HelloViewModel helloViewModel;
+        private AppViewModel appViewModel;
+        private LoginViewModel loginViewModel;
         private SignUpViewModel signUpViewModel;
-        private TripAddViewModel tripAddViewModel;
-        private TripDbAddViewModel tripDbAddViewModel;
-        private HomePageViewModel homePageViewModel;
+        private TripObserveUCViewModel tripObserveUCViewModel;
+        private TestWindowViewModel testWindowViewModel;
+        private MainViewModel mainViewModel;
 
 
         private INavigationService navigationService;
@@ -34,20 +34,20 @@ namespace WPF_TravelApp
                 Container = builder.Build();
 
                 navigationService = Container.Resolve<INavigationService>();
-                mainViewModel = Container.Resolve<MainViewModel>();
-                helloViewModel = Container.Resolve<HelloViewModel>();
+                appViewModel = Container.Resolve<AppViewModel>();
+                loginViewModel = Container.Resolve<LoginViewModel>();
                 signUpViewModel = Container.Resolve<SignUpViewModel>();
-                tripAddViewModel = Container.Resolve<TripAddViewModel>();
-                tripDbAddViewModel = Container.Resolve<TripDbAddViewModel>();
-                homePageViewModel = Container.Resolve<HomePageViewModel>();
+                tripObserveUCViewModel = Container.Resolve<TripObserveUCViewModel>();
+                testWindowViewModel = Container.Resolve<TestWindowViewModel>();
+                mainViewModel = Container.Resolve<MainViewModel>();
 
-                navigationService.Register<HelloViewModel>(helloViewModel);
+                navigationService.Register<LoginViewModel>(loginViewModel);
                 navigationService.Register<SignUpViewModel>(signUpViewModel);
-                navigationService.Register<TripAddViewModel>(tripAddViewModel);
-                navigationService.Register<TripDbAddViewModel>(tripDbAddViewModel);
-                navigationService.Register<HomePageViewModel>(homePageViewModel);
+                navigationService.Register<TripObserveUCViewModel>(tripObserveUCViewModel);
+                navigationService.Register<TestWindowViewModel>(testWindowViewModel);
+                navigationService.Register<MainViewModel>(mainViewModel);
 
-                navigationService.Navigate<HelloViewModel>();
+                navigationService.Navigate<MainViewModel>();
             }
             catch (Exception ex)
             {
@@ -56,9 +56,9 @@ namespace WPF_TravelApp
             }
         }
 
-        public ViewModelBase GetMainViewModel()
+        public ViewModelBase GetAppViewModel()
         {
-            return mainViewModel;
+            return appViewModel;
         }
     }
 }

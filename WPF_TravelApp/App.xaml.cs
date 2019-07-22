@@ -16,8 +16,8 @@ namespace WPF_TravelApp
         {
             var locator = new ViewModelLocator();
 
-            var window = new MainView();
-            window.DataContext = locator.GetMainViewModel();
+            var window = new AppView();
+            window.DataContext = locator.GetAppViewModel();
             window.ShowDialog();
         }
     }

@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace WPF_TravelApp.ViewModels
 {
-    class HomePageViewModel :ViewModelBase
+    class TestWindowViewModel : ViewModelBase
     {
-
     }
 }

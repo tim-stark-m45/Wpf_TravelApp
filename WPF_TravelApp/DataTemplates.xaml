@@ -3,19 +3,19 @@
                     xmlns:local="clr-namespace:WPF_TravelApp"                    
                     xmlns:v="clr-namespace:WPF_TravelApp.Views"
                     xmlns:vm="clr-namespace:WPF_TravelApp.ViewModels">
-    <DataTemplate DataType="{x:Type vm:HelloViewModel}">
-        <v:HelloView/>
+    <DataTemplate DataType="{x:Type vm:LoginViewModel}">
+        <v:LoginView/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:SignUpViewModel}">
         <v:SignUpView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:TripAddViewModel}">
-        <v:TripAddView/>
+    <DataTemplate DataType="{x:Type vm:TripObserveUCViewModel}">
+        <v:TripObserveUCView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:TripDbAddViewModel}">
-        <v:TripDbAddView/>
+    <DataTemplate DataType="{x:Type vm:TestWindowViewModel}">
+        <v:TestWindowView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:HomePageViewModel}">
-        <v:HomePageView/>
+    <DataTemplate DataType="{x:Type vm:MainViewModel}">
+        <v:MainView/>
     </DataTemplate>
 </ResourceDictionary>

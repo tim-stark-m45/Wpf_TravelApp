@@ -40,7 +40,7 @@ namespace WPF_TravelApp.ViewModels
                   db.Users.Add(User);
                   db.SaveChanges();
 
-                  navigationService.Navigate<HelloViewModel>();
+                  navigationService.Navigate<LoginViewModel>();
               }
               ));
         }
@@ -51,7 +51,7 @@ namespace WPF_TravelApp.ViewModels
             get => cancelCommand ?? (cancelCommand = new RelayCommand(
               () =>
               {
-                  navigationService.Navigate<HelloViewModel>();
+                  navigationService.Navigate<LoginViewModel>();
               }
               ));
         }

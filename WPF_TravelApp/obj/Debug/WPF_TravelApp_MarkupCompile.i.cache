@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Timka\source\repos\WPF_TravelApp\WPF_TravelApp\App.xaml
-7-76838245
+7-439232833
 
-30-38578836
+301384214012
 1421067589551
-DataTemplates.xaml;Views\HelloView.xaml;Views\HomePageView.xaml;Views\MainView.xaml;Views\SignUpView.xaml;Views\TripAddView.xaml;Views\TripDbAddView.xaml;
+DataTemplates.xaml;Views\AppView.xaml;Views\LoginView.xaml;Views\MainView.xaml;Views\SignUpView.xaml;Views\TestWindowView.xaml;Views\TripObserveUCView.xaml;
 
-False
+True
 
