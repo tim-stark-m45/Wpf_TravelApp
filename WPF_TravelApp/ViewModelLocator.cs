@@ -14,9 +14,11 @@ namespace WPF_TravelApp
         private AppViewModel appViewModel;
         private LoginViewModel loginViewModel;
         private SignUpViewModel signUpViewModel;
-        private TripObserveUCViewModel tripObserveUCViewModel;
-        private TestWindowViewModel testWindowViewModel;
         private MainViewModel mainViewModel;
+        private HomePageViewModel homePageViewModel;
+        private AddTripViewModel addTripViewModel;
+        private CheckBoxViewModel checkBoxViewModel;
+        private TicketViewModel ticketViewModel;
 
 
         private INavigationService navigationService;
@@ -37,17 +39,21 @@ namespace WPF_TravelApp
                 appViewModel = Container.Resolve<AppViewModel>();
                 loginViewModel = Container.Resolve<LoginViewModel>();
                 signUpViewModel = Container.Resolve<SignUpViewModel>();
-                tripObserveUCViewModel = Container.Resolve<TripObserveUCViewModel>();
-                testWindowViewModel = Container.Resolve<TestWindowViewModel>();
                 mainViewModel = Container.Resolve<MainViewModel>();
+                homePageViewModel = Container.Resolve<HomePageViewModel>();
+                addTripViewModel = Container.Resolve<AddTripViewModel>();
+                checkBoxViewModel = Container.Resolve<CheckBoxViewModel>();
+                ticketViewModel = Container.Resolve<TicketViewModel>();
 
                 navigationService.Register<LoginViewModel>(loginViewModel);
                 navigationService.Register<SignUpViewModel>(signUpViewModel);
-                navigationService.Register<TripObserveUCViewModel>(tripObserveUCViewModel);
-                navigationService.Register<TestWindowViewModel>(testWindowViewModel);
                 navigationService.Register<MainViewModel>(mainViewModel);
+                navigationService.Register<HomePageViewModel>(homePageViewModel);
+                navigationService.Register<AddTripViewModel>(addTripViewModel);
+                navigationService.Register<CheckBoxViewModel>(checkBoxViewModel);
+                navigationService.Register<TicketViewModel>(ticketViewModel);
 
-                navigationService.Navigate<MainViewModel>();
+                navigationService.Navigate<HomePageViewModel>();
             }
             catch (Exception ex)
             {

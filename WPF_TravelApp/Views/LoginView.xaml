@@ -17,7 +17,7 @@
             <Label FontSize="20" Content="Login:"/>
             <TextBox 
                 FontSize="20"
-                Text="{Binding User.UserName}"/>
+                Text="{Binding Text}"/>
             <Label FontSize="20" Content="Password:"/>
             <TextBox 
                 FontSize="20" 

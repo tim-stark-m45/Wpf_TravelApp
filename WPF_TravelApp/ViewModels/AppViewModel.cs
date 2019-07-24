@@ -33,28 +33,5 @@ namespace WPF_TravelApp.ViewModels
               }
               ));
         }
-
-        private RelayCommand loginCommand;
-        public RelayCommand LoginCommand
-        {
-            get => loginCommand ?? (loginCommand = new RelayCommand(
-              () =>
-              {
-                  navigation.Navigate<LoginViewModel>();
-              }
-              ));
-        }
-
-        private RelayCommand signUpCommand;
-        public RelayCommand SignUpCommand
-        {
-            get => signUpCommand ?? (signUpCommand = new RelayCommand(
-              () =>
-              {
-                  navigation.Navigate<SignUpViewModel>();
-              }
-              ));
-        }
-
     }
 }

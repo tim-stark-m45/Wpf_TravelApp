@@ -4,9 +4,11 @@
     { "type": "WPF_TravelApp.ViewModels.AppViewModel" },
     { "type": "WPF_TravelApp.ViewModels.LoginViewModel" },
     { "type": "WPF_TravelApp.ViewModels.SignUpViewModel" },
-    { "type": "WPF_TravelApp.ViewModels.TripObserveUCViewModel" },
-    { "type": "WPF_TravelApp.ViewModels.TestWindowViewModel" },
     { "type": "WPF_TravelApp.ViewModels.MainViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.HomePageViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.AddTripViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.CheckBoxViewModel" },
+    { "type": "WPF_TravelApp.ViewModels.TicketViewModel" },
     {
       "type": "WPF_TravelApp.Models.AppDbContext",
       "instanceScope": "single-instance"

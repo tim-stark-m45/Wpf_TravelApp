@@ -1,7 +1,9 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
+using GalaSoft.MvvmLight.Messaging;
 using System.Collections.ObjectModel;
 using System.Linq;
+using WPF_TravelApp.Messages;
 using WPF_TravelApp.Models;
 using WPF_TravelApp.Services;
 
@@ -11,6 +13,9 @@ namespace WPF_TravelApp.ViewModels
     {
         private ObservableCollection<User> users = new ObservableCollection<User>();
         public ObservableCollection<User> Users { get => users; set => Set(ref users, value); }
+
+        private string text;
+        public string Text { get => text; set => Set(ref text, value); }
 
         private User user = new User();
         public User User { get => user; set => Set(ref user, value); }
@@ -48,18 +53,20 @@ namespace WPF_TravelApp.ViewModels
             get => userLoginCommand ?? (userLoginCommand = new RelayCommand<User>(
               param =>
               {
-                  var result = user.UserName;
+                  var result = Text;
 
                   var result2 = Users.FirstOrDefault(x => x.UserName == result);
 
                   if (result2 != null)
                   {
-                      navigationService.Navigate<TripObserveUCViewModel>();
+                      Messenger.Default.Send(new FirstMessage { Message = Text });
+                      navigationService.Navigate<HomePageViewModel>();
                   }
                   else
                   {
                       messageService.ShowError("Login is not correct");
                   }
+                  Text = "";
               }
               ));
         }

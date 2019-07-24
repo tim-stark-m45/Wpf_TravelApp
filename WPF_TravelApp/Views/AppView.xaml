@@ -9,29 +9,6 @@
         <ResourceDictionary Source="../DataTemplates.xaml"/>
     </Window.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <StackPanel>
-            <Label Content="User"/>
-            <UniformGrid Rows="1" Columns="2">
-                <Button FontSize="15" Content="Login" Command="{Binding LoginCommand}"/>
-                <Button FontSize="15" Content="Sign Up" Command="{Binding SignUpCommand}"/>
-            </UniformGrid>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <ComboBox FontSize="30" Width="150"/>
-                <Button Grid.Column="1" Width="50" Content="+"/>
-            </Grid>
-            <Button FontSize="20" Content="Checklist"/>
-            <Button FontSize="20" Content="Tickets"/>
-            <Button FontSize="20" Content="Cities"/>
-            <Button FontSize="20" Content="Route map"/>
-        </StackPanel>
         <ContentControl Grid.Column="1" Content="{Binding CurrentPage}"/>
     </Grid>
 </Window>

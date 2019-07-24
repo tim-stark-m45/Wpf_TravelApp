@@ -9,13 +9,19 @@
     <DataTemplate DataType="{x:Type vm:SignUpViewModel}">
         <v:SignUpView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:TripObserveUCViewModel}">
-        <v:TripObserveUCView/>
-    </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:TestWindowViewModel}">
-        <v:TestWindowView/>
-    </DataTemplate>
     <DataTemplate DataType="{x:Type vm:MainViewModel}">
         <v:MainView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:HomePageViewModel}">
+        <v:HomePageView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddTripViewModel}">
+        <v:AddTripView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:CheckBoxViewModel}">
+        <v:CheckBoxView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:TicketViewModel}">
+        <v:TicketView/>
     </DataTemplate>
 </ResourceDictionary>
